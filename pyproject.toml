@@ -1,0 +1,19 @@
+[project]
+name = "beerbets"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "aaryan-dharmadhikari",email = "56603891+aaryan-dharmadhikari@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas",
+    "polars",
+    "panel"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
