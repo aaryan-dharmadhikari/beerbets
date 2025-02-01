@@ -1,6 +1,6 @@
 # beerbets/beerbets/main.py
 import panel as pn
-from beerbets.homepage import create_homepage
+from beerbets.homepage import tabs
 
 # Initialize Panel extension
 pn.extension('plotly', 'tabulator')
@@ -39,8 +39,8 @@ template = pn.template.FastListTemplate(
 )
 
 # Add the betting layout and homepage layout to the template
-template.main.append(betting_layout)
-template.main.append(create_homepage())
+# template.main.append(betting_layout)
+template.main.append(tabs)
 
 # Serve the app
 if pn.state.served:
